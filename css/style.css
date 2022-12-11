@@ -63,14 +63,8 @@ html {
     max-width: 100%;
     height: auto;
   }
-  .imgaboutme {
-    max-width: 40vh;
-  }
-  .imghistory {
-    min-width: 30vh;
-    max-width: 100vh;
-  }
-  .imghistory2 {
+
+  .imgstory {
     min-width: 30vh;
     max-width: 100vh;
   }
@@ -154,16 +148,17 @@ html {
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+  }
+
+  .gallery-item {
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
   }
   
   .gallery img {
     width: 100%;
-    height: auto;
-  }
-  
-  .gallery-item {
-    flex-basis: 23%;
+    height: 350px;
+    object-fit: cover;
   }
   
   .gallery a {
