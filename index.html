@@ -1,7 +1,160 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <title>Website: Antonova Anna</title>
+    <meta name="description" content="Привіт! Я дизайнерка та займаюсь екологічним ребрендингом.">
+    <meta property="og:image" content="https://honcharovaaa.github.io/img/me1.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+</head>
+  <body>
+    <div class="header"> 
+        <div class="navbar">
+            <div class ="logo" class="extra-p">
+                <a href="#top">A.ANTONOVA</a>
+                <ul class="menu">
+                    <li><a href="#top">Про мене</a></li>
+                    <li><a href="#history">Чому саме дизайн?</a></li>
+                    <li><a href="#portfolio">Моє портфоліо</a></li>
+                    <li><a href="#contacts" class="active">Мої контакти</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aboutme">
+            <div class="section first" id="aboutme"></div>
+            <div class="imgaboutme"><img src="img/me1.jpeg" /></div>
+            <div class="block1">
+                <h1>Каріна Гончарова</h1>
+
+                <p>Привіт!</p>
+                <p>Мене звати Аня. Я навчаюсь у Львівській національний академії мистецтв на 3 курсі. Люблю подорожувати та дивитись фільми і з цих вражень складати свій стиль.</p>
+                <p>Я обожнюю дивитись на щось прекрасне, я обожнюю слухати щось прекрасне і саме тому я вирішила, що хочу створювати щось прекрасне. І тому я тут)</p>
+            </div>
+        </div>
+
+        <div class="section" id="history">
+            <h2>Чому саме фотографія?</h2>
+            <div class="why">
+                <p>Основана моя діяльність заключається в дизайні логотипів для брендів, але це не основне, бо я також роблю більш екологічний ребрендинг.</p>
+                <p>Для мене це важливо, адже для зберігання екології та краси світу я хочу піклуватись про природу та довкілля.</p>
+                <p>Також моїм проектом був журнал, пов'язаний з Україною, який я презентувала європейцям для кращого розуміння нашої культури.</p>
+                <p>А якщо брати саме улюблене заняття для мене, то це - фотографія. Хоча для мене це скоріше хобі я сподіваюсь, що в майбутньому це стане моєю основною діяльністю.</p>
+                
+                <div class="imghistory"><img src="img/me2.jpeg" /></div>
+            </div>
+        </div>
+
+        <div class="sectionportfolio" id="portfolio">
+            <h2> Моє портфоліо:</h2>
+            <div class="section third"  id="portfolio"> 
+                <div class="gallery" id="lightgallery"> 
+                    <div class="gallery-item">
+                        <a href="img/1.jpeg" target="_blank">
+                        <img src="img/1.jpeg" /></a>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <a href="img/2.jpeg" target="_blank">
+                        <img src="img/2.jpeg" /></a>
+                    </div>
+                
+                    <div class="gallery-item">
+                        <a href="img/3.jpeg" target="_blank">
+                        <img src="img/3.jpeg" /></a>
+                    </div>
+                
+                    <div class="gallery-item">
+                        <a href="img/4.jpeg" target="_blank">
+                        <img src="img/4.jpeg" /></a>
+                    </div>
+                
+                    <div class="gallery-item">
+                        <a href="img/5.jpeg" target="_blank">
+                        <img src="img/5.jpeg" /></a>
+                    </div>
+                
+                
+                    <div class="gallery-item">
+                        <a href="img/6.jpeg" target="_blank">
+                        <img src="img/6.jpeg" /></a>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="img/7.jpeg" target="_blank">
+                        <img src="img/7.jpeg" /></a>
+                    </div>
+                
+                    <div class="gallery-item">
+                        <a href="img/8.jpeg" target="_blank">
+                        <img src="img/8.jpeg" /></a>
+                    </div>
+                
+                    <div class="gallery-item">
+                        <a href="img/9.jpeg" target="_blank">
+                        <img src="img/9.jpeg" /></a>
+                    </div>
+                
+                    <div class="gallery-item">
+                        <a href="img/10.png" target="_blank">
+                        <img src="img/10.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h2 id="contacts">Контакти:</h2>
+            
+            <div class="icons">
+                <a href="https://instagram.com/al.acrimosa" target="_blank"> 
+                    <img src="img/instagram.png" width="110" height="110"/>
+                </a>
+                <a href ="https://www.facebook.com/profile.php?id=100017215541266" target="_blank"> 
+                    <img src="img/facebook.png" width="110" height="110"/>
+                </a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+
+        <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"),
+        {
+            selector: ".gallery-item a"
+        }
+        );
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
+        <script>
+            var elm = document.querySelector('.navbar .menu');
+            var ms = new MenuSpy(elm);
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+        loop: true,
+        navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+                },
+            // effect: "fade",
+
+        spaceBetween: 30,
+
+        pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+        });
+        </script>
+    </body>
 </html>

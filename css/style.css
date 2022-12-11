@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  p {
+    color: rgb(0, 0, 0);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    line-height: 125%;
+  }
+  li {
+    color: rgb(0, 0, 0);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    line-height: 125%;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    line-height: 125%;
+    text-align: center;
+  }
+  body {
+    display: block;
+    margin: 0px;
+  }
+  
+  .aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: 70px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    gap: 30px;
+  }
+  
+  .block1 {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .why {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: 70px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    gap: 30px;
+  }
+  
+  img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  .imgaboutme {
+    max-width: 40vh;
+  }
+  .imghistory {
+    min-width: 30vh;
+    max-width: 100vh;
+  }
+  .imghistory2 {
+    min-width: 30vh;
+    max-width: 100vh;
+  }
+  
+  .extra-p {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .menu {
+    font-family: "Nunito Sans", sans-serif;
+    list-style: none;
+    background-color: black;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px 8px;
+    margin: 0px 4px;
+    border: 0px solid transparent;
+    border-radius: 16px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+  }
+  
+  .menu a.active {
+    background-color: rgb(72, 39, 24);
+  }
+  
+  .menu .active a {
+    background-color: rgb(72, 39, 24);
+  }
+  
+  .menu a:hover {
+    background-color: rgb(72, 39, 24);
+  }
+  .header {
+    position: sticky;
+    top: 0px;
+  }
+  
+  .navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 32px;
+  }
+  .logo {
+    color: white;
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 70px;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section {
+    min-height: 100vh;
+    padding-top: 64px;
+  }
+  
+  .sectionportfolio {
+    min-height: 100vh;
+    padding-top: 64px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .gallery-item {
+    flex-basis: 23%;
+  }
+  
+  .gallery a {
+    display: flex;
+  }
+  
+  .section.first {
+    padding-top: 0px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    background-color: none;
+  }
+  .content {
+    justify-content: center;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: rgb(0, 0, 0);
+    opacity: 0.25;
+    transition: all 0.5s ease;
+  }
+  
+  .swiper:hover .swiper-button-next,
+  .swiper:hover .swiper-button-prev {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+  }
+  
+  .swiper-pagination-bullets {
+    background: white;
+  }

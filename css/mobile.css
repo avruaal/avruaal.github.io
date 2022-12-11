@@ -1,0 +1,208 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        background-color: rgb(0, 0, 0);
+     }
+     .portfolio{
+        display:block;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 20px;
+        margin-bottom: 100px;
+     }
+
+     .logo{
+        margin-left: 20px;
+     }
+     .content{
+        justify-content: center;
+        margin-top: 10px;
+     }
+     .sectionportfolio{
+        min-height: 50vh;
+     }
+
+     .imgaboutme{
+        max-width: 40vh;
+        }
+        
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        background-color: rgb(0, 0, 0);
+     }
+     .aboutme{
+        align-items: center;
+        display:flex;
+     }
+
+     .imgaboutme{
+        min-width: 40vh;
+        max-width: 40vh;
+        }
+
+     .content{
+        justify-content: center;
+        margin-top: 10px;
+     }
+        .logo{
+            margin-left: 5px;
+         }
+         .imgportfolio{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            align-items: stretch;
+            justify-items: center;
+          }
+         .portfolio{
+            display:block;
+            align-items: center;
+            margin-top: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 100px;
+            gap: 20px;
+         }
+         .sectionportfolio{
+            min-height: 50vh;
+         }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar {
+        background-color: rgb(12, 150, 28);
+     }
+     .imgaboutme{
+        min-width: 40vh;
+        max-width: 80vh;
+        align-items: center;
+        display: flex;
+        margin-left: 30px;
+        }
+     .aboutme{
+        display:grid;
+        min-height: 1vh;
+        align-items: center;
+        }
+     .block1{
+        align-items: center;
+        justify-content:center;
+        margin-left: 30px;
+     }
+
+     .logo{
+            margin-left: 5px;
+         }
+     .imghistory{
+        min-width: 50vh;
+        max-width: 80vh;
+        display:flex;
+        align-items: center;
+     }
+     .imghistory2{
+        min-width: 50vh;
+        max-width: 80vh;
+        display: flex;
+     }
+     .why{
+        display: grid;
+        gap: 10px;
+        margin-bottom: 30px;
+     }
+     .section{
+        min-height: 1vh;
+        padding-top: 64px;
+        align-items: center;
+        margin-left: 30px;
+     }
+     .imgportfolio{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      align-items: stretch;
+      justify-items: center;
+    }
+    .portfolio{
+      display:block;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 100px;
+      gap: 20px;
+   }
+   .sectionportfolio{
+      min-height: 50vh;
+   }
+}
+@media screen and (max-width: 575px){
+   .navbar {
+      background-color: rgb(0, 47, 255);
+   }
+.imgaboutme{
+   min-width: 20vh;
+   max-width: 50vh;
+   align-items: center;
+   display: flex;
+   margin-left: 30px;
+   }
+   .aboutme{
+      display:grid;
+      min-height: 1vh;
+      align-items: center;
+
+      }
+   .block1{
+      align-items: center;
+      justify-content:center;
+      margin-left: 30px;
+   }
+
+   .logo{
+          margin-left: 1px;
+       }
+       .imghistory{
+         min-width: 40vh;
+         max-width: 70vh;
+         display:flex;
+         align-items: center;
+      }
+      .imghistory2{
+         min-width: 40vh;
+         max-width: 70vh;
+         display: flex;
+      }
+      .why{
+         display: grid;
+         gap: 10px;
+         margin-bottom: 20px;
+      }
+      .section{
+         min-height: 1vh;
+         padding-top: 64px;
+         align-items: center;
+         margin-left: 10px;
+      }
+      .imgportfolio{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 20px;
+       align-items: stretch;
+       justify-items: center;
+     }
+     .portfolio{
+       display:block;
+       align-items: center;
+       margin-top: 0px;
+       margin-left: 10px;
+       margin-right: 10px;
+       margin-bottom: 100px;
+       gap: 20px;
+    }
+    .sectionportfolio{
+       min-height: 50vh;
+    }
+}
