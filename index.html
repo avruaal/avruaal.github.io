@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
   <head>
     <title>Website: Antonova Anna</title>
     <meta name="description" content="Привіт! Я дизайнерка та займаюсь екологічним ребрендингом.">
     <meta property="og:image" content="https://honcharovaaa.github.io/img/me1.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Promt:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mobile.css" />
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
   <body>
-    <div class="header"> 
+    <div class="header">
         <div class="navbar">
             <a class ="logo" class="extra-p" href="#top">A.ANTONOVA</a>
-            <ul class="menu">
+
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
                 <li><a href="#top">Про мене</a></li>
                 <li><a href="#history">Чому саме дизайн?</a></li>
                 <li><a href="#portfolio">Моє портфоліо</a></li>
-                <li><a href="#contacts" class="active">Мої контакти</a></li>
+                <li><a href="#contacts">Мої контакти</a></li>
             </ul>
+
+            <div class="flag"></div>
         </div>
 
         <div class="aboutme">
@@ -43,34 +54,34 @@
 
         <div class="sectionportfolio" id="portfolio">
             <h2>Моє портфоліо:</h2>
-            <div class="section third"  id="portfolio"> 
-                <div class="gallery" id="lightgallery"> 
+            <div class="section third"  id="portfolio">
+                <div class="gallery" id="lightgallery">
                     <div class="gallery-item">
                         <a href="img/1.jpeg" target="_blank">
                         <img src="img/1.jpeg" /></a>
                     </div>
-            
+
                     <div class="gallery-item">
                         <a href="img/2.jpeg" target="_blank">
                         <img src="img/2.jpeg" /></a>
                     </div>
-                
+
                     <div class="gallery-item">
                         <a href="img/3.jpeg" target="_blank">
                         <img src="img/3.jpeg" /></a>
                     </div>
-                
+
                     <div class="gallery-item">
                         <a href="img/4.jpeg" target="_blank">
                         <img src="img/4.jpeg" /></a>
                     </div>
-                
+
                     <div class="gallery-item">
                         <a href="img/5.jpeg" target="_blank">
                         <img src="img/5.jpeg" /></a>
                     </div>
-                
-                
+
+
                     <div class="gallery-item">
                         <a href="img/6.jpeg" target="_blank">
                         <img src="img/6.jpeg" /></a>
@@ -80,17 +91,17 @@
                         <a href="img/7.jpeg" target="_blank">
                         <img src="img/7.jpeg" /></a>
                     </div>
-                
+
                     <div class="gallery-item">
                         <a href="img/8.jpeg" target="_blank">
                         <img src="img/8.jpeg" /></a>
                     </div>
-                
+
                     <div class="gallery-item">
                         <a href="img/9.jpeg" target="_blank">
                         <img src="img/9.jpeg" /></a>
                     </div>
-                
+
                     <div class="gallery-item">
                         <a href="img/10.png" target="_blank">
                         <img src="img/10.png" /></a>
@@ -98,15 +109,15 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="content">
             <h2 id="contacts">Контакти:</h2>
-            
+
             <div class="icons">
-                <a href="https://instagram.com/al.acrimosa" target="_blank"> 
+                <a href="https://instagram.com/al.acrimosa" target="_blank">
                     <img src="img/instagram.png" width="110" height="110"/>
                 </a>
-                <a href ="https://www.facebook.com/profile.php?id=100017215541266" target="_blank"> 
+                <a href ="https://www.facebook.com/profile.php?id=100017215541266" target="_blank">
                     <img src="img/facebook.png" width="110" height="110"/>
                 </a>
             </div>
