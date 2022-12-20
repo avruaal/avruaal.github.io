@@ -1,37 +1,33 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Promt', sans-serif;
+  display: block;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
   p {
-    color: rgb(0, 0, 0);
-    font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     line-height: 125%;
   }
   li {
-    color: rgb(0, 0, 0);
-    font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     line-height: 125%;
   }
-  h1 {
-    color: rgb(0, 0, 0);
-    font-family: "Nunito Sans", sans-serif;
+h1 {
     font-size: 45px;
     font-weight: 700;
   }
-  h2 {
-    color: rgb(0, 0, 0);
-    font-family: "Nunito Sans", sans-serif;
+h2 {
     font-size: 30px;
     line-height: 125%;
     text-align: center;
   }
-  body {
-    display: block;
-    margin: 0px;
-  }
-  
+
   .aboutme {
     display: flex;
     align-items: center;
@@ -42,7 +38,7 @@ html {
     margin-bottom: 0px;
     gap: 30px;
   }
-  
+
   .block1 {
     align-items: center;
     justify-content: space-between;
@@ -57,7 +53,7 @@ html {
     margin-bottom: 100px;
     gap: 30px;
   }
-  
+
   img {
     border-radius: 20px;
     max-width: 100%;
@@ -68,65 +64,129 @@ html {
     min-width: 30vh;
     max-width: 100vh;
   }
-  
+
   .extra-p {
-    color: white;
-    font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     text-align: center;
   }
-  
-  .menu {
-    font-family: "Nunito Sans", sans-serif;
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    z-index: 111;
     list-style: none;
     background-color: black;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-end;
+    transition: 0.3s;
   }
-  .menu a {
+  .menu__box li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+  }
+  .menu__box a {
     color: white;
+    display: block;
+    width: 100%;
     text-decoration: none;
     font-size: 16px;
     padding: 4px 8px;
     margin: 0px 4px;
     border: 0px solid transparent;
-    border-radius: 16px;
     background-color: transparent;
     transition: all 0.5s ease;
   }
-  
-  .menu a.active {
+
+  .menu__box a:hover {
     background-color: rgb(72, 39, 24);
   }
-  
-  .menu .active a {
-    background-color: rgb(72, 39, 24);
-  }
-  
-  .menu a:hover {
-    background-color: rgb(72, 39, 24);
-  }
-  .header {
-    position: sticky;
-    top: 0px;
-  }
-  
+
+  /*  MENU  */
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 100px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 111;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__item:hover {
+  /*background-color: #CFD8DC;*/
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+  /*  MENU  */
+
   .navbar {
+    position: sticky;
+    top: 0;
     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 32px;
+    padding: 10px 100px;
+  }
+  .flag {
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    height: 6px;
+    background-color: #0066cc;
+    border-bottom: 6px solid #ffcc00;
   }
   .logo {
     color: white;
     font-size: 25px;
-    font-family: "Nunito Sans", sans-serif;
-    margin-left: 70px;
     background-color: transparent;
     text-decoration: none;
   }
@@ -139,12 +199,12 @@ html {
     min-height: 60vh;
     padding-top: 64px;
   }
-  
+
   .sectionportfolio {
     min-height: 60vh;
     padding-top: 64px;
   }
-  
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -154,21 +214,21 @@ html {
     flex-basis: calc(25% - 20px);
     margin: 10px;
   }
-  
+
   .gallery img {
     width: 100%;
     height: 350px;
     object-fit: cover;
   }
-  
+
   .gallery a {
     display: flex;
   }
-  
+
   .section.first {
     padding-top: 0px;
   }
-  
+
   a {
     text-decoration: none;
     color: white;
@@ -179,20 +239,20 @@ html {
   .content {
     justify-content: center;
   }
-  
+
   .swiper-button-next,
   .swiper-button-prev {
     color: rgb(0, 0, 0);
     opacity: 0.25;
     transition: all 0.5s ease;
   }
-  
+
   .swiper:hover .swiper-button-next,
   .swiper:hover .swiper-button-prev {
     opacity: 1;
     color: rgb(0, 0, 0);
   }
-  
+
   .swiper-pagination-bullets {
     background: white;
   }
